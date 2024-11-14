@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <title>Agendamento</title>
+
+
+</head>
+
+<body>
+    <div class="container-menu">
+        <nav class="sidebar">
+
+            <ul>
+                <li class="side-list">
+                    <a href="./curso_cadastrado.html">
+                        <span class="icon"><i class="fa-solid fa-book" style="color: #ffffff;"></i></i></span>
+                        <span class="title">CURSOS CADASTRADOS</span>
+                    </a>
+                </li>
+                <li class="side-list">
+                    <a href="./sala_cadastrada.html">
+                        <span class="icon"><i class="fa-solid fa-landmark"></i></span>
+                        <span class="title">SALAS CADASTRADAS</span>
+                    </a>
+                </li>
+                <li class="side-list">
+                    <a href="./cadastro_professor.html">
+                        <span class="icon"><i class="fa-solid fa-chalkboard-user" style="color: #ffffff;"></i></span>
+                        <span class="title">CADASTRO DE PROFESSORES</span>
+                    </a>
+                </li>
+                <li class="side-list">
+                    <a href="./aula_cadastrada.html">
+                        <span class="icon"><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i></span>
+                        <span class="title">CALENDARIO DE AULAS</span>
+                    </a>
+                </li>
+                <li class="side-list active">
+                    <a href="./agendamento.html">
+                        <span class="icon"><i class="fa-regular fa-bell"></i></span>
+                        <span class="title">AGENDAMENTO</span>
+                    </a>
+                </li>
+                <li class="side-list">
+                    <a href="./to_do_list.html">
+                        <span class="icon"><i class="fa-solid fa-list-check" style="color: #ffffff;"></i></i></span>
+                        <span class="title">TO DO LIST</span>
+                    </a>
+                </li>
+                <li class="side-list" id="out">
+                    <a href="#" id="logoutButton">
+                        <span id="logoutButton" class="icon"><i class="fa-solid fa-right-from-bracket"
+                                style="color: #ffffff;"></i></i></span>
+                        <span id="logoutButton" class="title">SAIR</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <main class="nav-const">
+            <header class="nav-menu">
+                <div class="nav-text">
+                    <h1>GERENCIAMENTO MY CLASS</h1>
+                    <nav class="list-menu">
+                        <ul>
+                            <li><a href="./cadastro_sala.html">Cadastro de Salas</a></li>
+                            <li><a href="./cadastro_curso.html">Cadastro de Cursos</a></li>
+                            <li><a href="./cadastro_aula.html">Cadastro de Aulas</a></li>
+                            <li><a href="#"><i class="fa-solid fa-tower-broadcast" style="color: #ffffff;"></i></a>
+                                <ul class="sub-list-menu">
+                                    <li><a href="./painel_calouros.html" target="_blank">CALOUROS</a></li>
+                                    <li><a href="./painel_veteranos.html" target="_blank">VETERANOS</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+        </main>
+        <section class="container-courses">
+            
+            <div class="">
+                <h1 class="resultado-h1">Solicitação de Agendamento</h1>
+                <div class="" id="resultado" class="resultado">
+                    <p><strong>Nome:</strong> <span id="resultado-nome"></span></p>
+                    <p><strong>Disciplina:</strong> <span id="resultado-disciplina"></span></p>
+                    <p><strong>Tipo de Alteração:</strong> <span id="resultado-tipo"></span></p>
+                    <p><strong>Data:</strong> <span id="resultado-data"></span></p>
+                    <p><strong>Horário de Início:</strong> <span id="resultado-horario-inicio"></span></p>
+                    <p><strong>Horário de Fim:</strong> <span id="resultado-horario-fim"></span></p>
+                    <p><strong>Sala:</strong> <span id="resultado-sala"></span></p>
+                    <p><strong>Justificativa:</strong> <span id="resultado-justificativa"></span></p>
+                </div>
+                <button id="excluir-button" class="excluir-button">Excluir Solicitação</button>
+            </div>     
+            
+        </section>
+
+    </div>
+
+
+
+    <script src="../js/barra_lateral.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/agendamento.js"></script>
+
+</body>
+
+</html>

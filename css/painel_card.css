@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap');
+
+html::-webkit-scrollbar {
+    display: none; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to right, #4a90e2, #00AEFF);
+    overflow: none; 
+}
+
+.painel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+
+}
+
+.painel-logo {
+    height: 80px;
+    margin: 25px;
+    border-radius: 8px;
+
+}
+
+.painel-texto h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;   
+
+}
+
+.texto-painel {
+    font-weight: 400;
+    margin-bottom: -25px;
+
+}
+
+.texto-painel2 {
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {    
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);    
+    gap: 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease;       
+}
+
+.card {
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    font-size: 10px;    
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    font-weight: 600;
+
+}

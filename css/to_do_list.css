@@ -1,0 +1,74 @@
+.list-title{
+    color: var(--neutral-color-white);
+}
+.container-list{
+    background-color: var(--primary-color-roxo2);
+    width: 65%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 60px auto 0;
+}
+
+.input-task{
+    border: none;
+    border-radius: 5px;
+    width: 550px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.button-add-task{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: var(--primary-color-blue3);
+    color: var(--neutral-color-white);
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.button-add-task:hover{
+    background-color: var(--primary-color-pink);
+}
+
+.button-add-task:active{
+    opacity: 0.6;
+}
+
+.list-tasks{
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.task{
+    width: 775px;
+    background-color: var(--neutral-color-white);
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+img{
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img{
+    opacity: 1;
+}
+
+.done{
+    background-color: var(--primary-color-green);
+    text-decoration: line-through;
+}

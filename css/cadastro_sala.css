@@ -1,0 +1,48 @@
+.room-registration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.room-registration h2{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.room-registration.active {
+    display: block; 
+}
+
+.room-registration form{
+    display: flex;
+    flex-direction: column;
+}
+
+.room-registration label {
+    margin: 4px 0;
+}
+
+.room-registration input, .room-registration select {
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--neutral-color-black);
+    border-radius: 8px;
+    
+}
+
+.room-registration button {
+    margin-bottom: 70px;
+    padding: 10px;
+    background: var(--primary-color-gray);
+    color: var(--neutral-color-white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.room-registration button:hover {
+    background: var(--primary-color-gray2);
+}
+

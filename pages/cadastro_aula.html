@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <title>Cadastro de Aulas</title>
+
+
+</head>
+
+<body>
+    <div class="container-menu">
+        <nav class="sidebar">
+
+            <ul>
+                <li class="side-list active">
+                    <a href="./curso_cadastrado.html">
+                        <span class="icon"><i class="fa-solid fa-book" style="color: #ffffff;"></i></i></span>
+                        <span class="title">CURSOS CADASTRADOS</span>
+                    </a>
+                </li>
+                <li class="side-list">
+                    <a href="./sala_cadastrada.html">
+                        <span class="icon"><i class="fa-solid fa-landmark"></i></span>
+                        <span class="title">SALAS CADASTRADAS</span>
+                    </a>
+                </li>
+                <li class="side-list">
+                    <a href="./cadastro_professor.html">
+                        <span class="icon"><i class="fa-solid fa-chalkboard-user" style="color: #ffffff;"></i></span>
+                        <span class="title">CADASTRO DE PROFESSORES</span>
+                    </a>
+                </li>
+                <li class="side-list">
+                    <a href="./aula_cadastrada.html">
+                        <span class="icon"><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i></span>
+                        <span class="title">CALENDARIO DE AULAS</span>
+                    </a>
+                </li>
+                <li class="side-list">
+                    <a href="./agendamento.html">
+                        <span class="icon"><i class="fa-regular fa-bell"></i></span>
+                        <span class="title">AGENDAMENTO</span>
+                    </a>
+                </li>
+                <li class="side-list">
+                    <a href="./to_do_list.html">
+                        <span class="icon"><i class="fa-solid fa-list-check" style="color: #ffffff;"></i></i></span>
+                        <span class="title">TO DO LIST</span>
+                    </a>
+                </li>
+                <li class="side-list" id="out">
+                    <a href="#" id="logoutButton">
+                        <span id="logoutButton" class="icon"><i class="fa-solid fa-right-from-bracket"
+                                style="color: #ffffff;"></i></i></span>
+                        <span id="logoutButton" class="title">SAIR</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <main class="nav-const">
+            <header class="nav-menu">
+                <div class="nav-text">
+                    <h1>GERENCIAMENTO MY CLASS</h1>
+                    <nav class="list-menu">
+                        <ul>
+                            <li><a href="./cadastro_sala.html">Cadastro de Salas</a></li>
+                            <li><a href="./cadastro_curso.html">Cadastro de Cursos</a></li>
+                            <li><a href="./cadastro_aula.html">Cadastro de Aulas</a></li>
+                            <li><a href="#"><i class="fa-solid fa-tower-broadcast" style="color: #ffffff;"></i></a>
+                                <ul class="sub-list-menu">
+                                    <li class="sub-list"><a href="./painel_calouros.html" target="_blank">CALOUROS</a></li>
+                                    <li class="sub-list"><a href="./painel_veteranos.html" target="_blank">VETERANOS</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+        </main>
+        <section id="aulas" class="container-courses">
+            <h2>Cadastro de Aulas</h2>
+            <form id="form-aulas" class="room-class" action="../php/cadastro_aula.php" method="post">
+                <label for="aula-curso">Curso:</label>
+                <select id="aula-curso" name="aula-curso" required>
+                    <option value="">Selecione um curso</option>
+                    <!-- Opções serão preenchidas dinamicamente -->
+                </select>
+                </select>
+                <label for="curso-cor">Cor do Curso:</label>
+                <select id="curso-cor" name="curso-cor" required>
+                    <option value="">Selecione uma Cor</option>
+                    <!-- As cores dos cursos serão preenchidas aqui -->
+                </select>
+                <label for="aula-grade">Aula:</label>
+                <select id="aula-grade" name="aula-grade" required>
+                    <option value="">Selecione uma aula</option>
+                    <!-- Opções serão preenchidas dinamicamente -->
+                </select>
+                <label for="aula-periodo">Periodo:</label>
+                <select id="aula-periodo" name="aula-periodo" required>
+                    <option value="">Selecione um Periodo</option>
+                    <option value="MATUTINO">MATUTINO</option>
+                    <option value="VESPERTINO">VESPERTINO</option>
+                    <option value="NOTURNO">NOTURNO</option>                    
+                </select>
+                <label for="aula-sala">Sala:</label>
+                <select id="aula-sala" name="aula-sala" required>
+                    <option value="">Selecione uma Sala</option>
+                    <!-- Opções serão preenchidas dinamicamente -->
+                </select>
+                <label for="aula-professor">Professor(a):</label>
+                <select id="aula-professor" name="aula-professor" required>
+                    <option value="">Selecione um professor(a)</option>
+                    <!-- Opções serão preenchidas dinamicamente -->
+                </select>
+                <label for="aula-publico">Público:</label>
+                <select id="aula-publico" name="aula-publico" required>
+                    <option value="">Selecione um público</option>
+                    <option value="CALOUROS">CALOUROS</option>
+                    <option value="VETERANOS">VETERANOS</option>
+                    <option value="CALOUROS-E-VETERANOS">CALOUROS e VETERANOS</option>
+                </select>
+                <label for="aula-modalidade">Modalidade:</label>
+                <select id="aula-modalidade" name="aula-modalidade" required>
+                    <option value="">Selecione uma modalidade</option>
+                    <option value="PRESENCIAL">PRESENCIAL</option>
+                    <option value="SEMIPRESENCIAL">SEMIPRESENCIAL</option>
+                    <option value="PRESENCIAL/SEMIPRESENCIAL">PRESENCIAL E SEMIPRESENCIAL</option>
+                    <option value="DIGITAL">DIGITAL</option>
+                    <option value="FLEX">FLEX</option>
+                    <option value="VIA-TEAMS">VIA TEAMS</option>
+                </select>
+                <label for="aula-horario-inicio">Horário de Início:</label>
+                <input type="time" id="aula-horario-inicio" name="aula-horario-inicio" required>
+                <label for="aula-horario-fim">Horário de Fim:</label>
+                <input type="time" id="aula-horario-fim" name="aula-horario-fim" required>
+                <label for="dia-semana">Dia da Semana:</label>
+                <input type="date" id="dia-semana" name="dia-semana" style="text-transform: uppercase;"
+                    placeholder="DD/MM/AAAA" required>
+                <button type="submit">Cadastrar Aula</button>
+            </form>
+
+
+        </section>
+
+    </div>
+
+
+
+    <script src="../js/barra_lateral.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/listar_curso_aula.js"></script>
+    <script src="../js/listar_sala.js"></script>
+    <script src="../js/listar_professor.js"></script>
+    <script src="../js/listar_cor_curso.js"></script>
+
+
+</body>
+
+</html>

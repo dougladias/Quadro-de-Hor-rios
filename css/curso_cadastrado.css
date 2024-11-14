@@ -1,0 +1,25 @@
+.cursos-cadastrados {
+    display: flex;
+    list-style: none;
+    border: 2px solid black;
+    margin-bottom: 8px;
+}
+
+.cursos-cadastrados ul{
+    display: flex;
+    margin-top: -40px;
+    padding: 0;
+    list-style: none; 
+    flex-wrap: wrap; 
+       
+}
+.cursos-cadastrados ul li{
+    display: flex;
+    margin-top: 0px;
+    padding: 5px;
+    list-style: none;
+    text-decoration: none;
+    border: 2px solid black;
+    margin: 3px;
+    font-size: 11px;
+}

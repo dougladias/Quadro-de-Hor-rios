@@ -1,0 +1,29 @@
+.room-class{
+    display: flex;
+    flex-direction: column;
+}
+
+.room-class label {
+    margin: 4px 0;    
+}
+
+.room-class input, form select {
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.room-class button {
+    padding: 10px;
+    background: var(--primary-color-gray);
+    color: var( --neutral-color-white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.room-class button:hover {
+    background: var(--primary-color-gray2);
+}

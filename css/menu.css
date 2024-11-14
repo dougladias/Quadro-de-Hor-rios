@@ -1,0 +1,244 @@
+.container-menu{  
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: var(--neutral-color-white);
+    
+    
+}
+.sidebar{
+    position: fixed;
+    left: 0px;
+    width: 74px;
+    height: 100%;
+    background: var(--primary-color-15);
+    border-left: 5px solid var(--primary-color-15);    
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 2000;
+    
+
+}
+.sidebar:hover{
+    width: 300px;
+
+}
+.sidebar ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 120px;
+    
+  
+}
+.sidebar ul li{
+position: relative;
+list-style: none;
+width: 100%;
+border-top-left-radius: 15px ;
+border-bottom-left-radius: 15px ;
+
+
+}
+.sidebar ul li:hover{
+    background-color: var(--primary-color-20);
+    
+    
+}
+.sidebar ul li.active{
+    background: var(--primary-color-19);
+    
+}
+
+.sidebar ul li a{
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: var(--neutral-color-white);
+    
+}
+.sidebar ul li form{
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: var(--neutral-color-white);
+    
+}
+
+.sidebar ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin-right: 18px;
+
+}
+.sidebar ul li form .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin-right: 18px;
+
+}
+.sidebar ul li a .icon i{
+    position: relative;
+    font-size: 18px;
+    z-index: 1;
+    
+
+}
+.sidebar ul li form .icon i{
+    position: relative;
+    font-size: 18px;
+    z-index: 1;
+    
+
+}
+.sidebar ul li a i:hover{
+    transform: translateX(5px) rotate(5deg);
+}
+
+
+.sidebar ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 4px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+    font-size: 14px;
+    
+    
+}
+.sidebar ul li form .title{
+    position: relative;
+    display: block;
+    padding-left: 4px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+#out{
+    margin-top: 30px;
+    
+}
+
+
+.sidebar ul li.active a::before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 58%;
+    
+  
+}
+.sidebar ul li.active a::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 58%;
+    
+  
+}
+.nav-const{     
+    
+    color: var(--neutral-color-black);
+    background: var(--neutral-color-white);
+    position: relative;
+    z-index: 3000;
+    
+}
+.nav-menu{
+    
+    line-height: 1.6;
+    background: var(--primary-color-01);
+    
+        
+}
+.nav-text{
+        
+    background: var(--primary-color-01);
+    color: var(--neutral-color-white);
+    padding: 10px 0;
+    text-align: center;
+    margin-left: 7%;
+}
+.nav-text h1 {
+    font-size: 23px;
+}
+
+.list-menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 12px;   
+}
+.list-menu ul li {
+    display: inline;
+    margin-right: 50px;
+    position: relative;
+}
+.list-menu ul li a {
+    color: var(--neutral-color-white);
+    text-decoration: none;
+}
+.list-menu ul ul {
+    display: none;
+    position: absolute;
+    background: --primary-color-blue5;
+    padding: 10px;
+    border-radius: 8px;
+    top: 100%;
+    left: 0;
+}
+.list-menu ul li:hover > ul {
+    display: block;
+}
+.sub-list-menu{ 
+    list-style: none; 
+    padding: 0px;
+    margin: 0;
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    margin-left: -90px;
+    background: var(--primary-color-blue5); 
+    min-width: 200px; 
+    border-radius: 5px; 
+
+}
+.sub-list-menu  li  a { 
+    padding: 5px 8px;
+    color: var(--neutral-color-black);
+    text-decoration: none;
+    display: block;
+    margin-bottom: -20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+}
+.sub-list-menu  li  a:hover {   
+    color: var(--neutral-color-black);
+    background: var(--neutral-color-white);   
+    
+}
+
+
+

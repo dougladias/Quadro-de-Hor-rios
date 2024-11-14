@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap');
+
+
+@import url(../css/login.css); 
+@import url(../css/cadastro_curso.css); 
+@import url(../css/cadastro_sala.css); 
+@import url(../css/cadastro_aula.css); 
+@import url(../css/cadastro_professor.css);
+@import url(../css/agendamento.css);
+@import url(../css/to_do_list.css);
+@import url(../css/aula_cadastrada.css);
+@import url(../css/curso_cadastrado.css);
+@import url(../css/sala_cadastrada.css);
+@import url(../css/menu.css);
+
+
+:root{
+    --primary-color-roxo:#512da8;    
+    --primary-color-roxo2:#6b15f5;    
+    --primary-color-gray:#333;    
+    --primary-color-gray2:#555; 
+    --primary-color-01:#144bc8;   
+    --primary-color-blue:#007bff;        
+    --primary-color-blue2:#0056b3;        
+    --primary-color-blue3:#295ce9;
+    --primary-color-blue4:#004085;         
+    --primary-color-blue5:#316cec;
+    --primary-color-15:#034168;         
+    --primary-color-pink:#9d17a1;       
+    --primary-color-green:#8fac55;
+    --primary-color-19:#e62c1f;
+    --primary-color-20:#f69f27;        
+    --primary-color-white2:#e9ecef;        
+    
+    --neutral-color-white:#fff;
+    --neutral-color-black:#000;
+    --neutral-color-red:#ff0000;
+    
+
+   
+}
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}

@@ -1,0 +1,66 @@
+
+.container-courses{
+    background: var(--neutral-color-white);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 7%;
+    margin-top: 25px;
+    width: 92%;
+    
+}
+.container-courses h2{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.container-courses.active {
+    display: block; 
+}
+
+.form-courses {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-courses label {
+    margin: 4px 0;
+}
+
+.form-courses input, .form-courses select {
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    
+}
+
+button {
+    margin-bottom: 70px;
+    padding: 10px;
+    background: var( --primary-color-gray);
+    color: var(--neutral-color-white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--primary-color-gray2);
+}
+#aulas-grade {    
+    display: flex; 
+    align-items: end;
+    flex-wrap: wrap;    
+    margin-bottom: -10px;               
+    justify-content: flex-start;    
+    list-style-type: none;
+}
+#aulas-grade li{    
+    display: flex;        
+    margin: 15px;
+    margin-bottom: -6px;
+    padding: 5px;    
+}
